@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jheso"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-17 11:23:08 am"/>
+        <attribute name="created" value="amhlc287SkhFU09STEVZTUw7MjAyNi0wOC0xNzsxMTowMjoyNCBhbTsyNzEy"/>
+        <attribute name="edited" value="amhlc287SkhFU09STEVZTUw7MjAyNi0wOC0xNzsxMToyMzowOCBhbTsxOzI4MjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="income, cost, profit" type="Real" array="False" size=""/>
+            <input variable="income"/>
+            <input variable="cost"/>
+            <assign variable="profit" expression="income - cost"/>
+            <if expression="profit &gt; 0">
+                <then>
+                    <output expression="&quot;Profit: &quot;&amp;profit" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="profit" expression="profit * -1"/>
+                    <output expression="&quot;Loss: &quot;&amp;profit" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
